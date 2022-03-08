@@ -40,7 +40,7 @@ export default function NavLinkRouter() {
                         <CustomerInfo /> 
                     </Route>
                     <Route path="/createCustomer">
-                        <EditCustomer /> 
+                        <NewCustomer /> 
                     </Route>
 
 

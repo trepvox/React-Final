@@ -24,7 +24,7 @@ export const NewCustomer = (props) => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log('The customers props are' + props);
+        console.log('The customers props are' + [props] );
         addNewCustomer({customerName, petName, petBreed, address, appointmentDay, appointmentTime, walkDuration, customerNotes, walkerNotes})
     }
 
@@ -45,7 +45,8 @@ export const NewCustomer = (props) => {
         <form onSubmit={handleSubmit}>
             <Container id="customer-edit">
                 <div className='form-group'>
-                    <label htmlFor="customerNameInput"><h5>Customer's Name</h5></label>
+                    <center><h2>New Customer form</h2></center>
+                    <label htmlFor="customerNameInput"><h5>New Customer's Name</h5></label>
                     <input name="customerName" value={customerName} type="text" className="form-control" id="customerNameInput" 
                     onChange={(e) => setCustomerName(e.target.value)} />
                     <div className="form-group">
@@ -121,15 +122,15 @@ export const NewCustomer = (props) => {
                         <br></br> 
 
                     <div className="form-group">
-                        <label htmlFor="walkerNotesInput"><h5>Customer's Notes about their pet, quirks, needed items, ect.</h5> </ label>
-                        <input name="walkerNotes" value={customerNotes} type="text" className="form-control" id="walkerNotesInput" 
+                        <label htmlFor="walkerNotesInput"><h5>Coworkers Notes about their pet, quirks, needed items, ect.</h5> </ label>
+                        <input name="walkerNotes" value={walkerNotes} type="text" className="form-control" id="walkerNotesInput" 
                             onChange={(e) => setWalkerNotes(e.target.value)} />
                     </div>
                         <br></br> 
                 </div>
 
                 <button type="submit" className="btn btn-outline-success">Add New Customer</button>
-
+            
             </Container>
         </form>
     );

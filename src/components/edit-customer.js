@@ -79,9 +79,9 @@ export default class EditCustomer extends React.Component {
 
         return (
             <div>
-                <Container id="customer-edit">
+                <Container id="customer-edit" key= {this._id}>
                     <form onSubmit={this.handleSubmit} ref={ref => {this.myForm=ref;}} >
-                        <div className="form-group">
+                        {/* <div className="form-group">
                             <h3>Edit a Customer's info</h3>
                             <label htmlFor="customerNameInput"><h5>Customer's Name</h5></label>
                             <input name="customerName" value={this.state.name} type="text" className="form-control" id="customerNameInput" onChange={this.handleChange} />
@@ -113,12 +113,12 @@ export default class EditCustomer extends React.Component {
                         <div className="form-group">
                             <label htmlFor="addressInput"><h5>Customer's Address</h5></label>
                             <input name="address" value={this.state.address} type="text" className="form-control" id="addressInput" onChange={this.handleChange} />
-                        </div>
+                        </div> */}
 
                         <Dropdown>
                             <h5>Walk Day Appointment</h5>
                             <p>Timeslot for the walk on that specific day</p>
-                            <Dropdown.Toggle variant="outline-secondary" id="dropdown-basic">
+                            <Dropdown.Toggle key={"1"} variant="outline-secondary" id="dropdown-basic">
                                 {this.state.appointmentDay}
                             </Dropdown.Toggle>
                             <Dropdown.Menu>
@@ -126,10 +126,10 @@ export default class EditCustomer extends React.Component {
                             </Dropdown.Menu>
                         </Dropdown>
 
-                        <Dropdown>
+                        <Dropdown >
                             <h5>Walk Appointment Time </ h5>
                             <p>Timeslot for the walk to start</p>
-                            <Dropdown.Toggle variant="outline-secondary" id="dropdown-basic">
+                            <Dropdown.Toggle key={"2"} variant="outline-secondary" id="dropdown-basic">
                                 {this.state.appointmentTime}
                             </Dropdown.Toggle>
                             <Dropdown.Menu>
@@ -137,10 +137,10 @@ export default class EditCustomer extends React.Component {
                             </Dropdown.Menu>
                         </Dropdown>
 
-                        <Dropdown>
+                        <Dropdown >
                             <h5>Walk Time Length</h5>
                             <p>How long do you want the walk to be</p>
-                            <Dropdown.Toggle variant="outline-secondary" id="dropdown-basic">
+                            <Dropdown.Toggle key={"3"} variant="outline-secondary" id="dropdown-basic">
                                 {this.state.walkDuration}
                             </Dropdown.Toggle>
                             <Dropdown.Menu>

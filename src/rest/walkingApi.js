@@ -1,5 +1,5 @@
-const WALKING_ENDPOINT = 'https://crudcrud.com/api/0302b480ea3e41d4b2d76d4348d95160';
-//need a crudcrud url
+const WALKING_ENDPOINT = 'https://crudcrud.com/api/3027df86752d411ab283960b062bcb38/unicorns';
+//need a crudcrud needs a /word at the end of it so it can create something, can be anything of your choosing. 
 
 class WalkingService {
     getAll = async() => {
@@ -24,11 +24,7 @@ class WalkingService {
                 walkDuration: customer.walkDuration,
                 customerNotes: customer.customerNotes,
                 walkerNotes: customer.walkerNotes,
-                // walkTime: walking.walkTime,
-                // walkDay: walking.walkDay,
-                // animalType: walking.animalType,
-                // animalName: walking.animalName,
-                // notes: walking.notes
+
             }
             const resp = await fetch(`${WALKING_ENDPOINT}/${customer._id}`, {
                 method: 'PUT',
@@ -45,12 +41,23 @@ class WalkingService {
 
     create = async(customer) => {
         try {
+            console.log(WALKING_ENDPOINT);
             const resp = await fetch(`${WALKING_ENDPOINT}`, {
                 method: 'POST',
-                headers: {
+                headers: ({
                     'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(customer)
+                }),
+                // changed to call every part of the customer rather individually because calling customer as a whole wasn't working.
+                body: JSON.stringify({                    
+                "customerName": customer.customerName,
+                "petName" : customer.petName,
+                "petType": customer.petType,
+                "petBreed": customer.petBreed,
+                "address": customer.address,
+                "appointmentDay": customer.appointmentDay,
+                "appointmentTime": customer.appointmentTime,
+                "customerNotes": customer.customerNotes,
+                "walkerNotes": customer.walkerNotes})
             });
             return resp;
         } catch(e) {
