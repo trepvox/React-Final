@@ -1,4 +1,4 @@
-const WALKING_ENDPOINT = 'https://crudcrud.com/api/47259cdda4204a70b94557f1f1ff5c15/walking';
+const WALKING_ENDPOINT = 'https://crudcrud.com/api/90b59f2aad884721956652ce80c307b8/walking';
 //need a crudcrud needs a /word at the end of it so it can create something, can be anything of your choosing. 
 
 class WalkingService {
@@ -47,7 +47,8 @@ class WalkingService {
                 headers: ({
                     'Content-Type': 'application/json'
                 }),
-                // changed to call every part of the customer rather individually because calling customer as a whole wasn't working.
+                // changed to call every part of the customer rather individually 
+                // because calling customer as a whole wasn't working.
                 body: JSON.stringify({                    
                 "customerName": customer.customerName,
                 "petName" : customer.petName,
@@ -56,6 +57,7 @@ class WalkingService {
                 "address": customer.address,
                 "appointmentDay": customer.appointmentDay,
                 "appointmentTime": customer.appointmentTime,
+                "walkDuration": customer.walkDuration,
                 "customerNotes": customer.customerNotes,
                 "walkerNotes": customer.walkerNotes})
             });

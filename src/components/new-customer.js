@@ -7,7 +7,6 @@ import { walkingService } from '../rest/walkingApi';
 export const NewCustomer = (props) => {
     const [customerName, setCustomerName] = useState('');
     const [petName, setPetName] = useState('');
-    // const [petType, setPetType] = useState('');
     const [petBreed, setPetBreed] = useState('');
 
     const [address, setAddress] = useState('');
@@ -27,8 +26,6 @@ export const NewCustomer = (props) => {
         addNewCustomer({customerName, petName, petBreed, address, appointmentDay, appointmentTime, walkDuration, customerNotes, walkerNotes})
         console.log('The customers props are ' + customerName + ' ' + petName + ' ' + petBreed + ' ' + address + ' ' + appointmentDay + ' ' + 
                     appointmentTime + ' ' + walkDuration + ' ' + customerNotes + ' ' + walkerNotes + '.');
-        // console.log('The customers props are `/${this.props}`' );
-        // console.log('The customers props are {this.props.customerName, petName, petBreed, address, appointmentDay, appointmentTime, walkDuration, customerNotes, walkerNotes}' );
     }
 
     const _refreshData = async() => {
@@ -62,16 +59,6 @@ export const NewCustomer = (props) => {
                         </div>
                     </div>
                     <div />
-                    {/* <Dropdown>
-                        <h5>Pet Type</h5>
-                        <Dropdown.Toggle variant="info" id="dropdown-basic">
-                            {petType}
-                        </Dropdown.Toggle>
-                        <Dropdown.Menu>
-                            {petTypes.map((petType, i) => <Dropdown.Item eventKey = {i} onSelect={(eventKey) => setPetType(petType)}> {petType} </Dropdown.Item>)}
-                        </Dropdown.Menu>
-                    </Dropdown>
-                        <br></br> */}
 
                     <div className="form-group">
                         <label htmlFor="petBreedInput"><h5>Pet's Breed</h5></label>
@@ -129,7 +116,7 @@ export const NewCustomer = (props) => {
                                      {walkDuration} 
                                 </Dropdown.Item>)}
                             </Dropdown.Menu>
-                    </Dropdown>
+                        </Dropdown> 
                         <br></br>
 
                     <div className="form-group">

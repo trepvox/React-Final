@@ -13,14 +13,16 @@ export default class Home extends React.Component {
                 <br />
                 <h2 id='homeheader'>Pets be walking</h2>    
                 <p id='homeparagraphs'>
-                    Do your pets need some exercise but you aren't around during the weekday to take care of them until you get home and you're to tired to?
+                    Do your pets need some exercise but you aren't around during the weekday to take care of them 
+                    until you get home and you're to tired to?
                 </ p>
                 <img src={dogwalk} alt="dog" class="dogpic" />
                 <br />
                 <p />
                 <p id='homeparagraphs'>   
                     Well let us help you out by having us walk your pets.
-                    We aren't shy and our experts are trained to handle all your pets needs so they'll be just as healthy and happy as they can be.
+                    We aren't shy and our experts are trained to handle all your pets needs so they'll be just as 
+                    healthy and happy as they can be.
                 </p>
                 <br />
                 <h5 id='homeparagraphs'>Our experts are trained and familiar with any of your pets needs. <br></br>

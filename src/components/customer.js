@@ -40,13 +40,13 @@ export default class CustomerInfo extends React.Component {
                             {/* <Card.Text id='customertext'> */}
                                 <h5>Customer's Address {this.props.address}</h5>
                                     
-                                <h5>Their scheduled walk is on {this.props.appointmentDay} 
-                                    at {this.props.appointmentTime} for {this.props.walkDuration}.</h5>
+                                <h5>Their scheduled walk is on {this.props.appointmentDay}   {' '} 
+                                     at {this.props.appointmentTime} for {this.props.walkDuration}.</h5>
                             {/* </Card.Text> */}
                             <br />
                             {/* <Card.Text id='customertext'> */}
-                                <h5> <li>Notes from the Customer: </li>  {this.props.customerNotes} </h5>
-                                <h5> <li>Coworkers notes: </li> {this.props.walkerNotes} </h5>
+                                <h5> Notes from the Customer: <li> {this.props.customerNotes} </li> </h5>
+                                <h5> Coworkers notes: <li> {this.props.walkerNotes} </li> </h5>
                             {/* </Card.Text> */}
                         </Card.Body>
 

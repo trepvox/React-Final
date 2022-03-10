@@ -89,9 +89,9 @@ export default class EditCustomer extends React.Component {
                 {console.log(this.state._id)}
                 <Container id="customer-edit" >
                     <form onSubmit={this.handleSubmit} ref={ref => {this.myForm=ref;}} >
-                    <p>*{this.state.appointmentDay}</p>
+                    {/* <p>*{this.state.appointmentDay}</p>
                     <p>*{this.state.appointmentTime}</p>
-                    <p>*{this.state.walkDuration}</p>
+                    <p>*{this.state.walkDuration}</p> */}
                         <Dropdown>
                             <h5>Walk Day Appointment</h5>
                             <p>Timeslot for the walk on that specific day</p>
@@ -158,7 +158,6 @@ export default class EditCustomer extends React.Component {
                               id="input_walkerNotes" 
                               onChange={this.handleChange} 
                             />
-                            {/* <input name="coworkerNotes" value={this.state.coworkerNotes} type="text" className="form-control" id="input_coworkerNotes" onChange={this.handleChange} /> */}
                         </div>
 
                         <button type="submit" className="btn btn-outline-success">Update Customer</button>

@@ -13,7 +13,6 @@ code {
     monospace;
 }
 
-
 .navBar {
   background-color: rgba(143, 45, 146, 0.6);
   padding: 10px;
@@ -46,13 +45,6 @@ code {
 #importantbody {
   color: rgb(0, 0, 129);
   background-color: rgb(250, 135, 135);
-}
-
-
-#customer-edit {
-  background-color: rgba(255, 255, 255, 0.288);
-  color: rgb(0, 0, 0);
-
 }
 
 .dogpic {
@@ -123,3 +115,21 @@ Table {
 #titleprojectpage {
   color: aliceblue;
 }
+
+ #customerheader {
+  background-color: rgba(253, 186, 161, 0.534);
+}
+/*
+#customersubtitle {
+  background-color: rgba(255, 214, 199, 0.822);
+}
+
+#customer {
+  background-color: rgba(255, 214, 199, 0.822);
+}
+*/
+
+#customer-edit {
+  background-color: rgba(255, 214, 199, 0.822);
+  color: rgb(0, 0, 0);
+} 
