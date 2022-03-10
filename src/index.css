@@ -15,10 +15,14 @@ code {
 
 
 .navBar {
-  background-color: rgba(255, 217, 0, 0);
-  padding: 12px;
-  align-items: center;
-  color: aliceblue;
+  background-color: rgba(143, 45, 146, 0.6);
+  padding: 10px;
+  border: inset 5px rgba(137, 18, 141, 0.733);
+}
+
+.nav-link {
+  color: aliceblue !important;
+  text-shadow: 0 0 3px #000000, 0 0 5px #000000;
 }
 
 #home { 
@@ -86,4 +90,36 @@ code {
   max-width: 25%;
   max-height: 25%;
   margin: auto;
+}
+
+Table {
+  background-color: rgb(157, 128, 177);
+}
+
+/* #table {
+  color: white;
+} */
+
+#requirement {
+  background-color: lightgreen;
+}
+
+#completed {
+  background-color: rgb(37, 170, 253);
+}
+
+#analysising {
+  background-color: rgb(241, 241, 141);
+}
+
+#debugging {
+  background-color: lightpink;
+}
+
+#planning {
+  background-color: lightsalmon;
+}
+
+#titleprojectpage {
+  color: aliceblue;
 }

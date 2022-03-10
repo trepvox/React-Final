@@ -1,4 +1,4 @@
-const WALKING_ENDPOINT = 'https://crudcrud.com/api/3027df86752d411ab283960b062bcb38/unicorns';
+const WALKING_ENDPOINT = 'https://crudcrud.com/api/47259cdda4204a70b94557f1f1ff5c15/walking';
 //need a crudcrud needs a /word at the end of it so it can create something, can be anything of your choosing. 
 
 class WalkingService {

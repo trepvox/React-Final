@@ -9,13 +9,15 @@ export default class ImportantRules extends React.Component {
         return (
             <div>
 
-                <Container className='importantRules'>
-                    <center><h1>Our Rules from the Start</h1></center>
+                <Container >
+                    <br />
+                    <center><h1 id="homeheader">Our Rules from the Start</h1></center>
+                    <br/>
                     <Card>
-                        <Card.Header id='importantbody'>
-                            <h4>Our Staff's rules</h4>
+                        <Card.Header id='contactheader'>
+                           <center> <h4>Our Staff's rules</h4> </center>
                         </ Card.Header>
-                        <Card.Body id='importantbody'>
+                        <Card.Body id='contactbody'>
                                 <p id='rulestitle'>
                                     Things we make sure to do for every walk
                                 </p>    
@@ -29,7 +31,7 @@ export default class ImportantRules extends React.Component {
                                     ie. gloves for handling birds, treats, a musical flute to charm snakes.</li>
                                 </ul>
                                 {/* do more of this to just flesh this side out */}
-                                <h5>Our end goal is to make sure your pets are treated as if they are our pets.</h5>
+                               <center> <h5>Our end goal is to make sure your pets are treated as if they are our pets.</h5> </center>
                         </Card.Body>    
                     </Card>  
                 </Container>

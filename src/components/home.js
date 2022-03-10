@@ -10,6 +10,7 @@ export default class Home extends React.Component {
     render() {
         return (
             <center><Container className='home'>
+                <br />
                 <h2 id='homeheader'>Pets be walking</h2>    
                 <p id='homeparagraphs'>
                     Do your pets need some exercise but you aren't around during the weekday to take care of them until you get home and you're to tired to?

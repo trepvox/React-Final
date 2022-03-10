@@ -26,19 +26,13 @@ export default class CustomerList extends React.Component {
 
         // CustomerInfos isn't passing props properly
         CustomerInfos() {
-            console.log("starting customerinfos in customer-list", this.state.customers);
-            return this.state.customers.map((customer, key) => {
-                key={key};
-                console.log("starting the map to pair the key to each customer");
-                return 
-                <div key={key}>
-                
-                    <CustomerInfo {...customer} 
+                    console.log("starting customerinfos in customer-list", this.state.customers);
+            return this.state.customers.map(customer => {
+                return <CustomerInfo {...customer} key={customer._id}
                             deleteCustomer={this.deleteCustomer}
                             _refreshData={this._refreshData}
                             updateCustomer={this.updateCustomer} 
                             />
-                </div>
             });
         }
 
